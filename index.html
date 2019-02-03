@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szín Sudoku</title>
+    <link rel="stylesheet" href="animate.css">
+    <!--link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1><span class="letters"><span>S</span><span>z</span><span>í</span><span>n</span></span> Sudoku</h1>
+    <button id="start" class="">Játék Indítása ></button>
+    <div class="buttons size hidden">
+        <p>Válassz pályaméretet!</p>
+        <button id="small" class="hidden">Kicsi ></button>
+        <button id="large" class="hidden">Nagy ></button>
+    </div>
+    <div class="buttons difficulty hidden">
+        <p>Válassz nehézséget!</p>
+        <button id="easy" class="hidden">Könnyű ></button>
+        <button id="hard" class="hidden">Nehéz ></button>
+    </div>
+    <img src="assets/pictures/easy.jpg" alt="kicsi" id="kicsi" class="hidden">
+    <img src="assets/pictures/hard.jpg" alt="nagy" id="nagy" class="hidden">
+    <main>
+        <section id="table">
+            <table class="hidden">
+                
+                
+            </table>
+        </section>
+        <section id="selection" class="">
+            <ul id="colors">
+            
+            </ul>
+        </section>
+        <img src="assets/pictures/door.svg" alt="Kilépés" id="door" class="hidden">
+    </main>
+    <div class="confirmation hidden">
+        <p>Biztos ki akarsz lépni?</p>
+        <button id="yes">Igen</button>
+        <button id="no">Nem</button>
+    </div>
+    <div class="newgame animated fadeIn hidden">
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <img src="assets/pictures/emoji.png" alt="smiley" id="smiley" class="animated bounceInUp">
+        <div class="dialog animated bounceInUp">
+            <h2>Gratulálok! Nyertél!</h2>
+            <p>Szeretnél új játékot kezdeni?</p>
+            <div class="timer"></div>
+            <div class="cont">
+                <button>Új játék</button>
+                <!--span class="timernum">15</span-->
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
